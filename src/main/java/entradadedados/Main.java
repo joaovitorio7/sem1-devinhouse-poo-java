@@ -40,7 +40,15 @@ public class Main {
 
 
         //Se colocar 1.75 na entrada vai dar um erro, pois está com linguagem do brasil;
-        System.out.printf("O usuário %s tem %d anos e mede %.2fm.", nomeUsuario, idade, altura);
+        System.out.printf("O usuário %s tem %d anos e mede %.2fm.%n", nomeUsuario, idade, altura);
+
+
+        String idadeStr = Integer.toString(idade); //"32"
+        //conversão inversa
+        double peso = Double.parseDouble("10.5");
+
+        System.out.println(idadeStr);
+        System.out.println(peso);
 
     }
 }
