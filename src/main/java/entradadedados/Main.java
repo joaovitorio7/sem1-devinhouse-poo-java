@@ -25,8 +25,9 @@ public class Main {
         System.out.println("Qual seu nome?");
         String nomeUsuario = entrada.nextLine();
 
+        // conversão para nextline:
         System.out.println("Qual sua idade?");
-        int idade = entrada.nextInt();
+        int idade = Integer.parseInt(entrada.nextLine());
 
         System.out.println("Qual sua altura?");
         double altura = entrada.nextDouble();
