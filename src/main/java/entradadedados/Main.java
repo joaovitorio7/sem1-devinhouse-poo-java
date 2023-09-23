@@ -29,8 +29,15 @@ public class Main {
         System.out.println("Qual sua idade?");
         int idade = Integer.parseInt(entrada.nextLine());
 
+        //pode ocorrer erro
+//        System.out.println("Qual sua altura?");
+//        double altura = entrada.nextDouble();
+//        double teste2 = entrada.nextDouble();
+
+        //preferência
         System.out.println("Qual sua altura?");
-        double altura = entrada.nextDouble();
+        double altura = Double.parseDouble(entrada.nextLine());
+
 
         //Se colocar 1.75 na entrada vai dar um erro, pois está com linguagem do brasil;
         System.out.printf("O usuário %s tem %d anos e mede %.2fm.", nomeUsuario, idade, altura);
