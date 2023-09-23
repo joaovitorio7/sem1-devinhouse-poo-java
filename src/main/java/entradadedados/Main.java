@@ -42,6 +42,24 @@ public class Main {
         //Se colocar 1.75 na entrada vai dar um erro, pois está com linguagem do brasil;
         System.out.printf("O usuário %s tem %d anos e mede %.2fm.%n", nomeUsuario, idade, altura);
 
+        // MANIPULANDO DADOS com MÉTODOS disponíveis para fazer operações com string.
+        System.out.printf("O nome %s tem %d caracteres.%n", nomeUsuario, nomeUsuario.length());
+        System.out.println(nomeUsuario.toUpperCase());
+        System.out.println(nomeUsuario.toLowerCase());
+        System.out.println(nomeUsuario);
+        System.out.println("       Testando o Trim       ".trim());
+        System.out.println("João.".equals("joão"));
+        System.out.println("João".equalsIgnoreCase("joão"));
+        System.out.println("João".charAt(2));
+        System.out.println("João".indexOf('o'));
+        System.out.println("João".indexOf('v'));
+        System.out.println("João".lastIndexOf('o'));
+        System.out.println("testando".replace('t', 'T'));
+
+        String nome = "João Vitorio";
+        int indexDoEspaco = nome.indexOf(" ");
+
+        System.out.println(nome.substring(indexDoEspaco+1));
 
         String idadeStr = Integer.toString(idade); //"32"
         //conversão inversa
