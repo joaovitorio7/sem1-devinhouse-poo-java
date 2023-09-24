@@ -26,5 +26,9 @@ public class TestaArray {
 
         // modifica o parametro, modifica o array.
         Arrays.sort(anosCopa);
+        //Agora pode usar o Arrays.binarySearch, retotnar a posição, se ñ existir ele traz -1
+        // guarda numa variável int index, para imprimir o resultado
+        int index = Arrays.binarySearch(anosCopa, 2022);
+        System.out.println(index);
     }
 }
