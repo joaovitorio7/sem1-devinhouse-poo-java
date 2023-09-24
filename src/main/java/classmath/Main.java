@@ -49,5 +49,13 @@ public class Main {
         //se duas operações são verdadeiras AO MESMO TEMPO o resultado é verdadeiro
         System.out.println((5>3) && (8==9)); // E
         System.out.println((9!=9) || (10>=10)); // OU
+
+        //ORDEM DE PRECEDÊNCIA
+
+        //3 > 2 + 5 && 7 % 3 == 0
+        //Resolução:
+        //1º aritméticos
+        //2º relacionais
+        //3º lógicos
     }
 }
