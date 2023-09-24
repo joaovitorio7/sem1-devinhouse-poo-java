@@ -32,5 +32,22 @@ public class Main {
 
         int intAleatorio = (int) aleatorio;
         System.out.printf("Número aleatório inteiro: %d%n", intAleatorio);
+
+        // Operadores Relacionais e Lógicos:
+
+        String str1 = new String("str");
+        String str2 = new String("str");
+
+        //quando for comparar string sempre usar o equals nunca o ==
+
+        System.out.println(str1 == str2);
+        System.out.println(str1.equals(str2));
+
+        //ver essa estruturação como um não igual fica mais fácil de ler, ver como uma negação:
+        System.out.println("srt1 é diferente de str2?: " + !str1.equals(str2));
+
+        //se duas operações são verdadeiras AO MESMO TEMPO o resultado é verdadeiro
+        System.out.println((5>3) && (8==9)); // E
+        System.out.println((9!=9) || (10>=10)); // OU
     }
 }
