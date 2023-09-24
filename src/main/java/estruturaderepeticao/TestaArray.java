@@ -1,5 +1,7 @@
 package estruturaderepeticao;
 
+import java.util.Arrays;
+
 public class TestaArray {
     public static void main(String[] args) {
         int[] anosCopa = {2022, 2018, 2014, 2010, 2006, 2002};
@@ -16,10 +18,13 @@ public class TestaArray {
         System.out.println(anosCopa);
         for (int i = 0; i< anosCopa.length; i++){
             System.out.println(anosCopa[i]);
-
-            for (String nome : nomes) {
-                System.out.println(nome);
-            }
         }
+
+        for (String nome : nomes) {
+            System.out.println(nome);
+        }
+
+        // modifica o parametro, modifica o array.
+        Arrays.sort(anosCopa);
     }
 }
