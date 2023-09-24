@@ -27,16 +27,26 @@ public class Main {
         double restoDaDivisao = valorTotalCompra % qtdPessoas;
         System.out.printf("Resto da divisão do valor por pessoa: %.2f%n", restoDaDivisao);
 
+        // Operadores Aritméticos: INCREMENTO   /   DECREMENTO
 
         // idade = idade + 1;
-        idade += 2;
-        System.out.println("Idade incrementada: " + idade);
+        //idade += 2;
+        //idade++;
+        //++idade;
+        //System.out.println("Idade incrementada: " + idade++);
+        System.out.println("Idade incrementada: " + ++idade);
+
+        // idade = idade - 1;
+        //idade -= 3;
+        //idade--;
+        //--idade;
+        //System.out.println("Idade incrementada: " + idade--);
+        System.out.println("Idade decrementada: " + --idade);
+
 
         System.out.printf("Preço atual: R$%.2f%n", preco);
 
         preco *= 1.2;
         System.out.printf("Preço inflacionado em 20%%: R$%.2f%n", preco);
-
-
     }
 }
